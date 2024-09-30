@@ -32,17 +32,23 @@ class Library:
     
 def main():
  
-    war_book = Book("WWII And so On", "Adolf")
+    war_book = Book("World War II And so On", "Franklin Roosvelt")
     sf_book = Book("Star Wars, old Republic Strickes back!", "John Lucas")
     horror_book = Book("Things In Darkness", "Stephen King")
+    fantasy_book = Book("Harry Potter and a CHamber of Secrets", "J. K. K. Rowling")
+    holy_book = Book("The Old Testament", "Many Authors")
+    simple_book = Book("How To Do It Yourself", "by Graffy Blackmarrow")
 
     library = Library("Auqherus")
     library.add_book(war_book)
     library.add_book(sf_book)
     library.add_book(horror_book)
+    library.add_book(fantasy_book)
+    library.add_book(holy_book)
+    library.add_book(simple_book)
 
 
-    results = library.search_books("in")
+    results = library.search_books("old")
 
     for r in results:
         print(f"Title: {r.title}, Author: {r.author}")
