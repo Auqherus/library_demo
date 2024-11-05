@@ -51,7 +51,7 @@ def main():
     results = library.search_books("old")
 
     for r in results:
-        print(f"Title: {r.title}, Author: {r.author}")
+        print(f"Title: {r.title}, Author: {r.author}") # Old Testament, Star Wars, old Republic
 
 if __name__ == "__main__":
     main()
